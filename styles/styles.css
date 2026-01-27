@@ -1,5 +1,5 @@
 
-/* Font Declaration */
+/* Font Declarations */
 @font-face {
     font-family: 'Munro';
     src: url('../fonts/Munro-2LYe.ttf') format('truetype');
@@ -7,27 +7,10 @@
     font-style: normal;
 }   
 
-/* script */
-@font-face {
-    font-family: 'Pixel-Script';
-    src: url('../fonts/pixel-script.otf.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}   
-
-/* script 2*/
 @font-face {
   font-family: "FFScreenstarStdScriptRegular";
   src: url('../fonts/webFonts/FFScreenstarStdScriptRegular/font.woff2') format('woff2'), url('../fonts/webFonts/FFScreenstarStdScriptRegular/font.woff') format('woff');
 }
-
-/* script 3*/
-@font-face {
-    font-family: 'pixel-script-other';
-    src: url('../fonts/pixel-script.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}   
 
 /* Standard Overrides */
 html, body {
@@ -39,7 +22,6 @@ html, body {
 
     background-color: #352e74;
     
-    /* background-color: #642121; */
     font-family: 'Munro', sans-serif;
     color:#f1ebcf;
     overflow-x: hidden;
@@ -132,18 +114,11 @@ img
   padding-top:50px;
 }
 
-.script{
-      /* font-family: 'Pixel-Script', sans-serif; */
-      font-family: 'Pixel-Script';
-}
 
 .script2{
       font-family:'FFScreenstarStdScriptRegular';
 }
 
-.script3{
-      font-family:'pixel-script-other';
-}
 
 .img{
       max-width:65%;
@@ -222,7 +197,19 @@ img
   }
 
 
+    @media screen and (min-width: 700px) {
+    
+    .mobile-show{
+        display: none;      
+    }
+
+      }
+
       @media screen and (max-width: 700px) {
+
+    .mobile-show{
+        display: block;      
+    }
 
     img
     {
@@ -284,4 +271,10 @@ img
       display:none;
     }
   }
+
+      @media screen and (max-width: 370px) {
+            h1{
+                font-size: 30px;
+              }
+      }
   
